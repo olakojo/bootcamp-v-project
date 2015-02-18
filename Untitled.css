@@ -1,0 +1,106 @@
+body {
+    background-color: grey;
+    
+}
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 80px;
+}
+#cal {
+    font-family: cursive;
+    margin: 100px auto;
+    display: table;
+    box-shadow: 3px 4px 4px #FFC299;
+    
+}
+#cal .header {
+    cursor: default;
+    background-color: #FFBFBF;
+    height: 100px;
+    color: black;
+    position: relative;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 0 #E0FF85;
+    text-transform: uppercase;
+}
+#cal .header span {
+    display: inline-block;
+    line-height: 100px;
+}
+#cal .header .button {
+    width: 50px;
+    text-align: center;
+    position: absolute;
+}
+#cal .right.button {
+    right: 0;
+    top: 0;
+    border-left: 2px solid #993300;
+    border-top-right-radius: 5px
+}
+#cal .left.button {
+    left: 0;
+    border-right: 2px solid #993300;
+    border-top-left-radius: 5px;
+}
+#cal .header .button:hover {
+    background: #EDBC91
+} 
+ #cal .header .month-year {
+    letter-spacing: 5px;
+     width: 100%;
+     text-align: center;
+     font-size: 50px;
+ }
+#cal table {
+    background: white;
+    border-collapse: collapse;
+}
+#cal td {
+    color: black;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border: 5px solid #b2beb5;
+    cursor: default;
+    font-size: 30px;
+}
+#cal #cal-frame td.today {
+    background: brown;
+    color: white;
+}
+#cal #cal-frame td:not(.nil):hover {
+    color: #FF85E0;
+    text-shadow: #4C1818 5px 5px;
+    background: #997A5C;
+    box-shadow: 0px 0px 0ox;
+}
+#cal #cal-frame td span {
+    font-size: 80%;
+    position: relative;
+}
+#cal #cal-frame td span:first-child {
+    bottom: 5px;
+}
+#cal #cal-frame td span:last-child {
+    top: 5px;
+}
+#cal #cal-frame table.temp {
+    position:absolute;
+}
+#cal #cal-frame table.urr {
+    float:right;
+}
+
+
+
+
+
+
+
+
+
