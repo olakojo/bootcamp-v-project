@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <title> calendar freestyle </title>
+    <head>
+        <link type="text/css" rel="stylesheet" href="styles/calendar.css" >
+        <h1><strong>Calendar</strong></h1>
+        
+    </head>
+    <body>
+    <div id="cal"> 
+    <div class="header"> 
+            <span class="left button" id="prev"> &lang;</span> 
+            <span class="month-year" id="label"><em>Feb 2015</em></span> 
+            <span class="right button" id="next"> &rang;</span>
+    </div> 
+    <table id="days">
+            <td><b style="color:red">Sun</b></td> 
+            <td><b>Mon</b></td> 
+            <td><b>Tue</b></td> 
+            <td><b>Wed</b></td> 
+            <td><b>Thu</b></td> 
+            <td><b>Fri</b></td> 
+            <td><b>Sat</b></td>
+ 
+        </table> 
+    <div id="cal-frame"> 
+        <table class="curr"> 
+    <tbody> 
+        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr> 
+        <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td >13</td><td>14</td></tr> 
+        <tr><td>15</td><td>16</td><td >17</td><td >18</td><td class="today">19</td><td>20</td><td>21</td></tr> 
+        <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+        <tr><td class="nil"></td><td class="nil"></td><td class="nil"></td><td class="nil"></td><td class="nil"></td><td class="nil"></td>
+        <td class="nil"></td></tr> 
+    </tbody> 
+        </table>
+ 
+    </div> 
+</div>
+</body>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>  
+    <script src="js/calendar.js"></script>
+        <script>
+            var cal = CALENDAR();
+            cal.init();
+        </script>
+    </body>
+</html>
