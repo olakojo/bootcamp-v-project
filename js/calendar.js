@@ -11,7 +11,7 @@ var CALENDAR = function () {
     }
     function switchMonth(next, month, year) {
         var curr = label.text().trim().split(" "), calendar, tempYear=parseInt(curr[1],10);
-        month=month || ((next) ? ((curr[0]==="dec") ? 0 : months.indexOf(curr[0])+ 1) : ((curr[0])==="jan") ? 11 :                                         months.indexOf(curr[0])-1);
+        month=month || ((next) ? ((curr[0]==="December") ? 0 : months.indexOf(curr[0])+ 1) : ((curr[0])==="January") ? 11 :                                         months.indexOf(curr[0])-1);
         year=year || ((next && month ===0) ? tempYear+1 : (!next && month ===11) ? tempYear-1 : tempYear);
         console.profile("createCal");
         calendar = createCal(year, month);
