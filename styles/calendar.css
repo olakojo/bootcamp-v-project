@@ -27,7 +27,7 @@ h1 {
     text-transform: uppercase;
 }
 #cal .header span {
-    display: inline-block;
+    display: inline-block; 
     line-height: 100px;
 }
 #cal .header .button {
@@ -77,7 +77,7 @@ h1 {
     color: #FF85E0;
     text-shadow: #4C1818 5px 5px;
     background: #997A5C;
-    box-shadow: 0px 0px 0ox;
+    box-shadow: 0px 0px 0px;
 }
 #cal #cal-frame td span {
     font-size: 80%;
@@ -92,7 +92,7 @@ h1 {
 #cal #cal-frame table.temp {
     position:absolute;
 }
-#cal #cal-frame table.urr {
+#cal #cal-frame table.curr {
     float:right;
 }
 

@@ -2,7 +2,7 @@ var CALENDAR = function () {
     var wrap; label; 
     months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     function init(newWrap) {
-       wrap = $(newWrap || "#cal");
+        wrap = $(newWrap || "#cal");
         label = wrap.find("#label");
         wrap.find("#prev").bind("click.calendar", function () { switchMonth(false); });
         wrap.find("#next").bind("click.calendar",   function () { switchMonth(true);  });
@@ -32,7 +32,7 @@ var CALENDAR = function () {
   function createCal(year,month) {
       var day = 1, i, j, haveDays=true,
         startDay = new Date(year, month, day).getDay();
-        daysInMonths = [31, (((year%4===0) && (year%100===0))||(year%400===0)) ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+        daysInMonths = [31, (((year%4===0) && (year%100!=0))||(year%400===0)) ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
     var calendar = [];
     if(createCal.cache[year]) {
          if(createCal.cache[year][month]) {
